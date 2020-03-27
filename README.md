@@ -3,4 +3,4 @@
 Create Pet Basic form page for your client Pawtastic! 
 
 #### Wireframe
-![wireframe](./pawtastic/src/wireframe/pawtastic_wireframe.png)
+![wireframe](./wireframe/pawtastic_wireframe.png)
