@@ -1,7 +1,8 @@
-body{
-  background-color: gray;
-}
 
+body{
+  background-color:#9497A7;
+}
+*{box-sizing: border-box;}
 .App {
   text-align: center;
   display: flex;
@@ -11,13 +12,19 @@ body{
 }
 
 .div2{
-  height: 700px;
+  height: 500px;
   width: 700px;
-  background-color: aqua;
+  background-color: #F1CFCD;
 }
 
 .div1{
   height: 700px;
   width: 500px;
-  background-color: chocolate;
+  background-color: #545871;
+}
+
+.div3{
+  height: 200px;
+  width: 700px;
+  background-color: white;
 }
