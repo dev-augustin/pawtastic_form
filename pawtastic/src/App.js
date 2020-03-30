@@ -10,22 +10,19 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <div className="wrapper">
-        <div className="App">
-          
-  
-          <div className='div1'>
-          <Nav/>
+          <div className="App">
+             <div className='div1'>
+                  <Nav/>
+             </div>
+             <div className='div2'>
+                  <Header/>
+                  <Content/>
+             </div>
+             <div className='div3'>
+                  <Footer/>
+             </div>
           </div>
-          <div className='div2'>
-          <Header/>
-          <Content/>
-          </div>
-          <div className='div3'>
-            <Footer/>
-          </div>
-          
-          </div>
-      </div>
+       </div>
       </React.Fragment>
       
     );
