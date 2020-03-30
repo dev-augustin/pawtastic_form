@@ -75,7 +75,43 @@ body{
   border-radius: 20px;
 }
 
+.switch{
+  margin-top: 10px;
+  padding: 5px;
+  width: 60px;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+  background-color:#eee;
+  border-radius:20px;
+}
+
+.switch::after{
+
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-color: grey;
+  border-radius: 50%;
+  top: 1px;
+  left: 2px;
+  transition: all 0.4s;
+}
+.checkbox:checked + .switch::after {
+  left : 20px; 
+}
+.checkbox:checked + .switch {
+  background-color: #7983ff;
+}
+.photo{
+  margin: 450 px;
+}
+.checkbox { 
+  display : none;
+}
 /* Reference: https://www.w3schools.com/css/css3_box-sizing.asp */
 /* https://codepen.io/pen/?&editable=true */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout */
 /*https://www.w3schools.com/cssref/tryit.asp?filename=trycss_grid-template-rows*/
+/* https://medium.com/front-end-weekly/creating-a-toggle-switch-in-css-2d23e496d035 */
