@@ -56,7 +56,24 @@ body{
   background-color: white;
   border-bottom-right-radius: 10px;
 }
+#backbutton{
+  /* text-align: left; */
+  margin-left: 80px;
+  margin-top: 20px;
+  color: darkgrey;
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
 
+}
+#nextbutton{
+  /* text-align: right; */
+  margin-left: 200px;
+  color: darkgrey;
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+}
 
 /* Reference: https://www.w3schools.com/css/css3_box-sizing.asp */
 /* https://codepen.io/pen/?&editable=true */
