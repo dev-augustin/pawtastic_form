@@ -1,30 +1,64 @@
+*{box-sizing: border-box;} 
+/* The box-sizing property allows us to include the padding and border in an element's total width and height. https://w3schools.org */
 
 body{
   background-color:#9497A7;
+  padding: 100px;
+  margin:0 auto;
+  align-content: center;
+  /* align-items: center; */
 }
-*{box-sizing: border-box;}
+
 .App {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin:100px;
+  border: 2px solid #9497A7;
+  /* border: 5px solid blue; */
+  border-radius: 15px;
+  padding: 0px;
+  margin: 0 auto;
+  align-content: center;
 }
 
-.div2{
-  height: 500px;
-  width: 700px;
-  background-color: #F1CFCD;
+.App > div{
+  /* border: 2px solid #ffa94d;
+  border-radius: 2px; */
+  padding: 1em; 
 }
 
-.div1{
-  height: 700px;
-  width: 500px;
+.App{
+  display: grid;
+  grid-template-columns: 400px 390px 200px;
+  grid-template-rows: 120px 370px 100px ;
+  height: 670px;
+  width:1000px;
+  grid-gap:0px;
+  grid-template-areas: 
+  "a b b"
+  "a b b "
+  "a c c"
+  ;
+  /* align-content: center;  */
+  /* justify-items: center;  */
+}
+.div1 {
+  grid-area: a;
   background-color: #545871;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+ 
+}
+.div2 {
+  grid-area: b;
+  background-color: #E9D8DA;
+  border-top-right-radius: 10px;
+}
+.div3 {
+  grid-area: c;
+  background-color: white;
+  border-bottom-right-radius: 10px;
 }
 
-.div3{
-  height: 200px;
-  width: 700px;
-  background-color: white;
-}
+
+/* Reference: https://www.w3schools.com/css/css3_box-sizing.asp */
+/* https://codepen.io/pen/?&editable=true */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout */
+/*https://www.w3schools.com/cssref/tryit.asp?filename=trycss_grid-template-rows*/
