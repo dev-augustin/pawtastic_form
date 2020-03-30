@@ -1,21 +1,27 @@
 import React from 'react';
 import './App.css';
+import Header from  './components/Header';
+import Content from './components/Content';
+import Nav from './components/Nav';
 
-class App extends React.Component() {
+class App extends React.Component {
   render(){
     return (
-      <div className="App">
-        <header>
-          <h1>Lorem10</h1>
-        </header>
-       <form>
-         <label>
-          Name
-          <br/>
-          <input/>
-         </label>
-       </form>
+      <React.Fragment>
+        <div className="App">
+          
+          <div className='div1'>
+          <Header/>
+          <Content/>
+          </div>
+          <div className='div2'>
+          <Nav/>
+          </div>
+          
+   
       </div>
+      </React.Fragment>
+      
     );
     
   }
