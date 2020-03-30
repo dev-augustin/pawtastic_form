@@ -9,6 +9,7 @@ class App extends React.Component {
   render(){
     return (
       <React.Fragment>
+        <div className="wrapper">
         <div className="App">
           
   
@@ -23,7 +24,7 @@ class App extends React.Component {
             <Footer/>
           </div>
           
-   
+          </div>
       </div>
       </React.Fragment>
       
