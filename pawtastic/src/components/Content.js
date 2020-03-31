@@ -29,19 +29,34 @@ class Content extends React.Component{
             <form onSubmit={this.handleSubmit}>
                  <label>
                      Name:
-                     <input type="text" value={this.state.value} onChange={this.handleChange}/>
+                     <br/>  <input style={{marginTop:'10px'}} type="text" value={this.state.value} onChange={this.handleChange} placeholder="Pet's Name"/>
                  </label>
-                 <br/>
+                 <br/><br/>
                  <label>
                      Breed:
-                     <input type="text" value={this.state.value} onChange={this.handleChange}/>
+                     Gen
+                     <br/><input style={{marginTop:'10px'}} type="text" placeholder="Pet's Breed" value={this.state.value} onChange={this.handleChange}/>
+                 </label>
+              
+                 <label style={{marginLeft:'20px'}} >
+                     Birthday:
+                     <input type="text" placeholder="MM/DD/Y"Y value={this.state.value} onChange={this.handleChange}/>
+                 </label>  
+                 {/* &nbsp; */}
+                 {/* <input type="Submit" value="Submit" /> */}
+                 <br/>
+                 <br/>
+                 <label>
+                    Gender
+                    <br/><input style={{marginTop:'10px'}} type="text"/>
                  </label>
                  <label>
-                     Birthday:
-                     <input type="text" value={this.state.value} onChange={this.handleChange}/>
-                 </label>  
-                 <br/>
-                 <input type="Submit" value="Submit" />
+                   Spayed or Neutered
+                   <br/><input style={{marginTop:'10px'}} type="text"/>
+                 </label>
+                 <label>
+                  Weight   
+                 </label>
             </form>
            
         );
